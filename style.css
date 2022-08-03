@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 880px;
+    height: 440px;
+    background-color: hsl(0, 0%, 95%);
+    flex-wrap: wrap;
+}
+
+.first {
+    background-color: hsl(31, 77%, 52%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.33%;
+    justify-content: space-evenly;
+    border-radius: 10px 0 0 10px;
+    padding: 0 35px;
+}
+
+.second {
+    background-color: hsl(184, 100%, 22%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.33%;
+    justify-content: space-evenly;
+    padding: 0 35px;
+}
+
+.third {
+    background-color: hsl(179, 100%, 13%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.33%;
+    justify-content: space-evenly;
+    border-radius: 0 10px 10px 0;
+    padding: 0 35px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    width: 120px;
+}
+
+.fir {
+    color: hsl(31, 77%, 52%);
+
+}
+
+.sec {
+    color: hsl(184, 100%, 22%);
+}
+
+.thi {
+    color: hsl(179, 100%, 13%);
+}
+
+.fir:hover {
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.sec:hover {
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.thi:hover {
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 590px) {
+    .card {
+        width: 295px;
+        height: 400px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .first {
+        flex-basis: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .second {
+        flex-basis: 100%;
+    }
+
+    .third {
+        flex-basis: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+}
