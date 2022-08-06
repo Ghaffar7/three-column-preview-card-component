@@ -14,6 +14,12 @@ body {
     min-height: 100vh;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
@@ -36,6 +42,10 @@ p {
     height: 440px;
     background-color: hsl(0, 0%, 95%);
     flex-wrap: wrap;
+}
+
+img {
+    width: 60px;
 }
 
 .first {
@@ -77,19 +87,13 @@ button {
     padding: 14px;
     border-radius: 30px;
     width: 120px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .fir {
     color: hsl(31, 77%, 52%);
 
-}
-
-.sec {
-    color: hsl(184, 100%, 22%);
-}
-
-.thi {
-    color: hsl(179, 100%, 13%);
 }
 
 .fir:hover {
@@ -99,11 +103,19 @@ button {
     border: 2px solid hsl(0, 0%, 100%);
 }
 
+.sec {
+    color: hsl(184, 100%, 22%);
+}
+
 .sec:hover {
     cursor: pointer;
     background-color: hsl(184, 100%, 22%);
     color: hsla(0, 0%, 100%, 0.75);
     border: 2px solid hsl(0, 0%, 100%);
+}
+
+.thi {
+    color: hsl(179, 100%, 13%);
 }
 
 .thi:hover {
